@@ -17,17 +17,19 @@ export default function HomePage() {
     return (<div className="home-box">
         <NavBar dimension={dimension} />
         <div className="homepage-box" >
+            <div>
 
-            <div className="image-box" >
-                <div style={{ fontFamily: "Gotham Rounded,sand-serif", fontSize: "5.5rem", marginTop: "100px", color: "white", textShadow: "0 3px 6px rgb(0 0 0 / 25%)" }}>
-                    <p style={{ width: "800px", marginRight: "none" }}>Hernán Berisso</p>
-                    <p style={{ position: "relative", left: "25%", marginTop: "-100px", width: "50px" }}>conducción</p>
-                </div>
-
-                <div style={{ fontFamily: "Gotham Rounded,sand-serif", fontSize: "5.5rem", marginTop: "100px", color: "white", textShadow: "0 3px 6px rgb(0 0 0 / 25%)", }}>
-                    <p style={{ width: "800px" }}>Hernán Berisso</p>
-                    <p style={{ position: "relative", left: "25%", marginTop: "-100px", width: "50px" }}>conducción</p>
-                </div>
+                <div className="image-box" >
+                    <div className="text-box" >
+                        <div className="first-text">
+                            <p className="p1-first-text">Hernán Berisso</p>
+                            <p className="p2-first-text">conducción</p>
+                        </div>
+                        <div className="second-text">
+                            <p className="p1-second-text">Juventud de</p>
+                            <p className="p2-second-text">Diego "EL COLO" Santilli</p>
+                        </div>
+                    </div></div>
 
             </div>
 
