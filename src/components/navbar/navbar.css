@@ -1,0 +1,150 @@
+@media (min-width: 992px) {
+    .logoo{
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+    .navBox{
+        position: fixed;
+        top: 18px;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: white;
+        transition: 0.3s;
+        height: 70px;
+        padding: 10px;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+    }
+    .navBox::before{
+        content: "";
+        height: 18px;
+        width: 100%;
+        display: block;
+        background: linear-gradient(to right, #a02382 0%,#e62328 17%,#e62328 17%,#e62328 39%,#f58723 61%,#ffd205 84%,#ffd205 100%);
+        position: absolute;
+        top: -18px;
+        left: 0px;
+    }
+    .items-box{
+        display: flex ;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        padding-right: 5px;
+       
+    }
+    .icons-box{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+        color: #212529;
+        margin-top: -4px;
+        transition: 0.4s;
+    }
+    .icon:hover{
+        color:#4b535c;
+    }
+    .button{
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        color: #666666;
+        line-height: 18px;
+        font-weight: 100;
+        font-family: 'Gotham Rounded', sans-serif;
+        padding-right: 0.75rem!important;
+        padding-left: 0.75rem!important;
+    }
+    .button:hover{
+        color: #242424;
+        box-shadow: #666666 0px 1px;
+    }
+    .logoPro{
+        background-image: url("../../assets/pro-logo.PNG");
+        height: 93px;
+        width: 100px;
+        background-size: cover;
+        
+    }
+}
+@media (max-width: 991px) {
+    .navBox{
+        position: fixed;
+        top: 18px;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: white;
+        transition: 0.3s;
+        height: 70px;
+        padding: 10px;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+    }
+    .navBox::before{
+        content: "";
+        height: 18px;
+        width: 100%;
+        display: block;
+        background: linear-gradient(to right, #a02382 0%,#e62328 17%,#e62328 17%,#e62328 39%,#f58723 61%,#ffd205 84%,#ffd205 100%);
+        position: absolute;
+        top: -18px;
+        left: 0px;
+    }
+    .items-box{
+        display: flex ;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 40%;
+    }
+    .item-box{
+        display: flex;
+        align-items: center;
+    }
+    .icons-box{
+        display: flex;
+        flex-direction: row;
+    }
+    .hamburger{
+        width: 50px;
+        height: 50px;
+        color: #212529;
+        margin-top: -4px;
+        transition: 0.4s;
+    } 
+    .hamburger-box{
+        display: flex ;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        padding-right: 5px;
+    }
+    .button:hover{
+        color: #242424;
+        box-shadow: #666666 0px 1px;
+    }
+    .logoPro{
+        background-image: url("../../assets/pro-logo.PNG");
+        height: 80px;
+        width: 70px;
+        background-size: cover;
+        
+    }
+}

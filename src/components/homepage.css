@@ -1,0 +1,38 @@
+.home-box{
+    height: 100%;
+    width: 100%;
+    
+}
+@media (min-width: 1200px) {
+    .image-box{
+        background-image: url("../assets/f7d1f0c4-b7a5-46e7-a261-164969838721.png");
+        min-height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .homepage-box{
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 1199px) {
+    .image-box{
+        background-image: url("../assets/f7d1f0c4-b7a5-46e7-a261-164969838721.png");
+        min-height: 40vh;
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+    .homepage-box{
+        width: 100%;
+    }
+   
+}
+@media (max-width: 600px){
+.image-box {
+    background-image: url("../assets/f7d1f0c4-b7a5-46e7-a261-164969838721.png");
+    min-height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+}
