@@ -33,11 +33,11 @@
     }
     .p1-first-text{
         display: flex;
-        justify-content: end;
+        justify-content:flex-end;
     }
     .p2-first-text{
         display: flex;
-        justify-content: end;
+        justify-content:flex-end;
         margin-top: -70px;
     }
     .second-text{
@@ -81,11 +81,11 @@
     }
     .p1-first-text{
         display: flex;
-        justify-content: end;
+        justify-content:flex-end;
     }
     .p2-first-text{
         display: flex;
-        justify-content: end;
+        justify-content:flex-end;
         margin-top: -50px;
     }
     .second-text{
@@ -126,11 +126,11 @@
 }
 .p1-first-text{
     display: flex;
-    justify-content: end;
+    justify-content:flex-end;
 }
 .p2-first-text{
     display: flex;
-    justify-content: end;
+    justify-content:flex-end;
     margin-top: -15px;
 }
 @media (max-width: 600px){
