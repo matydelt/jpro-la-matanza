@@ -20,16 +20,15 @@ export default function HomePage() {
             <div>
 
                 <div className="image-box" >
-                    <div className="text-box" >
-                        <div className="first-text">
-                            <p className="p1-first-text">Hernán Berisso</p>
-                            <p className="p2-first-text">conducción</p>
-                        </div>
-                        <div className="second-text">
-                            <p className="p1-second-text">Juventud de</p>
-                            <p className="p2-second-text">Diego "EL COLO" Santilli</p>
-                        </div>
-                    </div></div>
+                    <div className="first-text text-box">
+                        <p className="p1-first-text">Hernán Berisso</p>
+                        <p className="p2-first-text">conducción</p>
+                    </div>
+                    <div className="second-text text-box">
+                        <p className="p1-second-text">Juventud de</p>
+                        <p className="p2-second-text">Diego "EL COLO" Santilli</p>
+                    </div>
+                </div>
 
             </div>
 
