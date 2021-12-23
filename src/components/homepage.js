@@ -1,18 +1,8 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import NavBar from "./navbar/navbar";
 import "./homepage.css"
-export default function HomePage() {
-    const [dimension, updateDimention] = useState({ width: window.innerWidth, height: window.innerHeight });
-    useEffect(() => {
-        window.addEventListener("resize", () => {
-            updateDimention({
-                ...dimension,
-                width: window.innerWidth,
-                height: window.innerHeight
-            });
-        })
-    }, [])
+export default function HomePage({ dimension }) {
+
 
     return (<div className="home-box">
         <NavBar dimension={dimension} />

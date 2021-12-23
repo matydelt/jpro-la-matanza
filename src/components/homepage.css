@@ -58,7 +58,7 @@
 @media (max-width: 1199px) {
     .image-box{
         background-image: url("../assets/f7d1f0c4-b7a5-46e7-a261-164969838721.png");
-        min-height: 40vh;
+        min-height: 50vh;
         background-size: cover; 
         background-repeat: no-repeat;
         margin-top: 6.5rem;
@@ -90,7 +90,7 @@
         margin-top: -50px;
     }
     .second-text{
-        margin-top: 200px;
+        margin-top: 100px;
     }
     .p1-second-text{
         display: flex;
@@ -103,10 +103,10 @@
     }
    
 }
-@media (max-width: 600px){
+@media (max-width: 700px){
 .image-box {
     background-image: url("../assets/93817c1b-fd61-4c7a-a250-da4aa843e1c9.png");
-    min-height: 42vh;
+    min-height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 6.5rem;
