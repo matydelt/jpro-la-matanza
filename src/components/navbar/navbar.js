@@ -74,7 +74,7 @@ export default function NavBar({ dimension }) {
                     <ul className='nav-menu-items' >
                         <li className='navbar-toggle'>
                             <Link to="/">
-                                <img style={{ width: "60px" }} src="https://pro.com.ar/wp-content/themes/pro/assets/images/logo_blanco.svg" />
+                                <div className="logo-sidebar" ></div>
                             </Link>
                             <div style={{ width: "100%", display: "flex", justifyContent: "flex-end", marginLeft: "10px" }}>
                                 <a onClick={showSidebar}  >

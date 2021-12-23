@@ -74,7 +74,7 @@
         box-shadow: #666666 0px 1px;
     }
     .logoPro{
-        background-image: url("../../assets/pro-logo.PNG");
+        background-image: url("../../assets/9cc16b9f-81af-4f29-ae93-05c8150dc256.jfif");
         height: 93px;
         width: 100px;
         background-size: cover;
@@ -245,6 +245,12 @@
           height: 25px;
           background-size: cover;
       }
-     
+     .logo-sidebar{
+        margin-left: -15px;
+         background-image: url("../../assets/jpro-logo-sidebar.png");
+         width: 100px;
+         height: 80px;
+         background-size: cover ;
+     }
       
 }
