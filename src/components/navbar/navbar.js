@@ -50,7 +50,7 @@ export default function NavBar({ dimension }) {
                         </a>
                     </div>
                     <div style={{ padding: "5px" }}>
-                        <a href="https://instagram.com" target={"_blank"} rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/jpro.lamatanza/" target={"_blank"} rel="noopener noreferrer">
                             <FaInstagram className="icon" />
                         </a>
                     </div>
@@ -117,7 +117,7 @@ export default function NavBar({ dimension }) {
                                     </a>
                                 </div>
                                 <div style={{ padding: "5px" }}>
-                                    <a href="https://instagram.com" target={"_blank"} rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/jpro.lamatanza/" target={"_blank"} rel="noopener noreferrer">
                                         <FaInstagram className="iconSide" />
                                     </a>
                                 </div>
