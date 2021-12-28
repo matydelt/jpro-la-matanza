@@ -71,14 +71,14 @@ export default function HomePage({ dimension }) {
                     <h2>¡SEGUINOS EN NUESTRAS REDES!</h2>
                     <h3>INSTAGRAM</h3>
                     <div className="center" >
-                        <iframe http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" options={{ width: 320, height: 550 }} src="http://instagram.com/p/CXpJkCxAjTi/embed" frameBorder="0" style={{ marginRight: "10px", borderRadius: "10px", minHeight: "500px" }}></iframe>
+                        <iframe options={{ width: 320, height: 550 }} src="https://instagram.com/p/CXpJkCxAjTi/embed" frameBorder="0" style={{ marginRight: "10px", borderRadius: "10px", minHeight: "500px" }}></iframe>
                     </div>
                     <h3>FACEBOOK</h3>
                     <div className="center" style={dimension.width > 1000 ? { marginLeft: "30px", borderRadius: "10px" } : {}}>
                         <iframe style={{ marginLeft: "10px", borderRadius: "10px", border: "none", overflow: "hidden" }} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                     <h3>TWITTER</h3>
-                    <TwitterTimelineEmbed sourceType="TwitterDev" screenName="TwitterDev" theme="dark" options={dimension.width > 900 ? { height: 500, width: 500 } : { height: 400, width: 350 }} />
+                    <TwitterTimelineEmbed sourceType="TwitterDev" profile="TwitterDev" list="" screenName="TwitterDev" theme="dark" options={dimension.width > 900 ? { height: 500, width: 500 } : { height: 400, width: 350 }} />
                     <h3>ESCUCHA NUESTRAS CANCIONES</h3>
                     <div className="center">
 
