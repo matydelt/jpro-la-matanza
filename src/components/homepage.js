@@ -71,7 +71,7 @@ export default function HomePage({ dimension }) {
                     <h2>¡SEGUINOS EN NUESTRAS REDES!</h2>
                     <h3>INSTAGRAM</h3>
                     <div className="center" >
-                        <iframe options={{ width: 320, height: 550 }} src="http://instagram.com/p/CXpJkCxAjTi/embed" frameBorder="0" style={{ marginRight: "10px", borderRadius: "10px", minHeight: "500px" }}></iframe>
+                        <iframe http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" options={{ width: 320, height: 550 }} src="http://instagram.com/p/CXpJkCxAjTi/embed" frameBorder="0" style={{ marginRight: "10px", borderRadius: "10px", minHeight: "500px" }}></iframe>
                     </div>
                     <h3>FACEBOOK</h3>
                     <div className="center" style={dimension.width > 1000 ? { marginLeft: "30px", borderRadius: "10px" } : {}}>
