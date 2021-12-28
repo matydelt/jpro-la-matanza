@@ -7,6 +7,7 @@ import "./navbar.css"
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg"
 import { IoClose } from "react-icons/io5";
+
 export default function NavBar({ dimension }) {
     const [sidebar, setSidebar] = React.useState(false);
     const showSidebar = () => setSidebar(!sidebar);
@@ -40,7 +41,7 @@ export default function NavBar({ dimension }) {
                 </div>
                 <div>
                     <Link to="/sumate" className="button">
-                        HAY RAZONES
+                        CONOCE NUESTRAS secretarias
                     </Link>
                 </div>
                 <div className="icons-box">
@@ -106,7 +107,7 @@ export default function NavBar({ dimension }) {
                         </li>
                         <li key={5} className="nav-text">
                             <Link to={"/SUMATE"} >
-                                <span>{"hay razones"}</span>
+                                <span>{"CONOCE NUESTRAS secretarias"}</span>
                             </Link>
                         </li>
                         <li className='navbar-toggle'>
