@@ -1,14 +1,32 @@
-.footer-box{
-    background-color: #333;
-    text-align: center;
-    /* padding: 57px 0 50px; */
-    min-height: 300px;
-    width: 100%;
+.footer-box {
+  background-color: #333;
+  text-align: center;
+
+  min-height: 150px;
+  width: 100%;
 }
-.redes-box{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+.redes-box {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.image-box-footer {
+  background-image: url("../../assets/jpro-logo-sidebar.png");
+  width: 100px;
+  height: 80px;
+  background-size: cover;
+  position: relative;
+  @media (min-width: 992) {
+    left: 47.5%;
+  }
+  @media (max-width: 991) {
+    left: 40.5%;
+  }
+}
+.iconfooter {
+  width: 50px;
+  height: 30px;
+}
+@media screen {
 }

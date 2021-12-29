@@ -1,71 +1,82 @@
-
-    @media (min-width:996px) {
-        
-        .sumate-box{
-            background: linear-gradient(
-        37deg, rgba(15,100,170,1) 0%,rgba(160,35,130,1) 20%,rgba(195,35,85,1) 48%,rgba(230,35,40,1) 75%,rgba(245,135,35,1) 100%);
-        height: 100vh;
-        }
-        .text-sumate{
-            width: 31%;
-        }
-        .title-sumate{
-            padding-top: 50px;
-        }
-        .form-box{
-            color: white;
-            font-family: "Gotham Rounded";
-            margin-top: 5.7%;
-            width: 100%;
-        }
-        .form-sumate{
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .input-sumate{
-            width: 25%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;    
-        }
-        .input-box{
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-@media (max-width:995px){
-    .sumate-box{
-        background: linear-gradient(
-    37deg, rgba(15,100,170,1) 0%,rgba(160,35,130,1) 20%,rgba(195,35,85,1) 48%,rgba(230,35,40,1) 75%,rgba(245,135,35,1) 100%);
+@media (min-width: 996px) {
+  .sumate-box {
+    background: linear-gradient(
+      37deg,
+      rgba(15, 100, 170, 1) 0%,
+      rgba(160, 35, 130, 1) 20%,
+      rgba(195, 35, 85, 1) 48%,
+      rgba(230, 35, 40, 1) 75%,
+      rgba(245, 135, 35, 1) 100%
+    );
     height: 100vh;
-    }
-    .text-sumate{
-        width: "70%" 
-    }
-    .title-sumate{
-        padding-top: 30%;
-    }
-    .form-box{
-        color: white;
-        font-family: "Gotham Rounded";
-        margin-top: 10%;
-        width: 100%;
-    }
-    .form-sumate{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .input-sumate{
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;    
-    }
-    .input-box{
-        display: flex;
-        justify-content: center;
-    }
+  }
+  .text-sumate {
+    width: 31%;
+  }
+  .title-sumate {
+    padding-top: 50px;
+  }
+  .form-box {
+    color: white;
+    font-family: "Gotham Rounded";
+    margin-top: 5.7%;
+    width: 100%;
+  }
+  .form-sumate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-sumate {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .input-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 995px) {
+  .sumate-box {
+    background: linear-gradient(
+      37deg,
+      rgba(15, 100, 170, 1) 0%,
+      rgba(160, 35, 130, 1) 20%,
+      rgba(195, 35, 85, 1) 48%,
+      rgba(230, 35, 40, 1) 75%,
+      rgba(245, 135, 35, 1) 100%
+    );
+    height: 100vh;
+  }
+  .text-sumate {
+    width: "70%";
+    padding: 10px;
+  }
+  .title-sumate {
+    padding-top: 30%;
+  }
+  .form-box {
+    color: white;
+    font-family: "Gotham Rounded";
+    margin-top: 10%;
+    width: 100%;
+  }
+  .form-sumate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-sumate {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .input-box {
+    display: flex;
+    justify-content: center;
+  }
 }
