@@ -4,6 +4,7 @@ import HomePage from './components/homepage';
 import { Route, Routes } from 'react-router';
 import Sumate from './components/sumate/sumate';
 import { useEffect, useState } from 'react';
+import ComoParticipar from './components/comoparticipar/comoparticipar';
 
 function App() {
   const [dimension, updateDimention] = useState({ width: window.innerWidth, height: window.innerHeight });
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path={"/"} element={<HomePage dimension={dimension} />} />
         <Route path="/sumate" element={<Sumate dimension={dimension} />} />
+        <Route path="/como-participar" element={<ComoParticipar dimension={dimension} />} />
       </Routes>
     </div>
   );

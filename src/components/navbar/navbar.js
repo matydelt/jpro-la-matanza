@@ -17,7 +17,7 @@ export default function NavBar({ dimension }) {
                 <div className="logoPro"></div>
             </Link>
         </div>
-        {dimension.width > 991 ?
+        {(dimension.width ? dimension.width : 0) > 991 ?
             <div className="items-box">
                 <div >
                     <Link to="/sumate" className="button">
@@ -25,7 +25,7 @@ export default function NavBar({ dimension }) {
                     </Link>
                 </div>
                 <div>
-                    <Link to="/sumate" className="button">
+                    <Link to="/como-participar" className="button">
                         ¿COMO PARTICIPAR?
                     </Link>
                 </div>
@@ -91,7 +91,7 @@ export default function NavBar({ dimension }) {
                             </Link>
                         </li>
                         <li key={2} className="nav-text">
-                            <Link to={"/SUMATE"} >
+                            <Link to={"/como-participar"} >
                                 <span>{"¿cómo participar?"}</span>
                             </Link>
                         </li>

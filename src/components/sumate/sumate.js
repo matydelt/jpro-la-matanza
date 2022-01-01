@@ -49,7 +49,7 @@ export default function Sumate({ dimension }) {
             </form>
 
         </div>
-        <div style={{ display: "flex", alignItems: "flex-end", marginTop: "30px" }}>
+        <div style={dimension.width < 992 ? { display: "flex", alignItems: "flex-end", marginTop: "30px" } : { display: "flex", alignItems: "flex-end", marginTop: "25%" }}>
             <Footer dimension={dimension}></Footer>
         </div>
 
