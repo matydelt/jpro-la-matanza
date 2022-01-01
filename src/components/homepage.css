@@ -59,9 +59,9 @@
     #ffd205 84%,
     #ffd205 100%
   );
-  padding: 100px;
   color: white;
   font-family: "Gotham Rounded";
+  margin-bottom: 10px;
 }
 .image-box {
   background-image: url("../assets/f7d1f0c4-b7a5-46e7-a261-164969838721.png");
