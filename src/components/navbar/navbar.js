@@ -7,6 +7,7 @@ import "./navbar.css"
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg"
 import { IoClose } from "react-icons/io5";
+
 export default function NavBar({ dimension }) {
     const [sidebar, setSidebar] = React.useState(false);
     const showSidebar = () => setSidebar(!sidebar);
@@ -16,7 +17,7 @@ export default function NavBar({ dimension }) {
                 <div className="logoPro"></div>
             </Link>
         </div>
-        {dimension.width > 991 ?
+        {(dimension.width ? dimension.width : 0) > 991 ?
             <div className="items-box">
                 <div >
                     <Link to="/sumate" className="button">
@@ -24,7 +25,7 @@ export default function NavBar({ dimension }) {
                     </Link>
                 </div>
                 <div>
-                    <Link to="/sumate" className="button">
+                    <Link to="/como-participar" className="button">
                         ¿COMO PARTICIPAR?
                     </Link>
                 </div>
@@ -40,7 +41,7 @@ export default function NavBar({ dimension }) {
                 </div>
                 <div>
                     <Link to="/sumate" className="button">
-                        HAY RAZONES
+                        CONOCE NUESTRAS secretarias
                     </Link>
                 </div>
                 <div className="icons-box">
@@ -50,7 +51,7 @@ export default function NavBar({ dimension }) {
                         </a>
                     </div>
                     <div style={{ padding: "5px" }}>
-                        <a href="https://instagram.com" target={"_blank"} rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/jpro.lamatanza/" target={"_blank"} rel="noopener noreferrer">
                             <FaInstagram className="icon" />
                         </a>
                     </div>
@@ -90,7 +91,7 @@ export default function NavBar({ dimension }) {
                             </Link>
                         </li>
                         <li key={2} className="nav-text">
-                            <Link to={"/SUMATE"} >
+                            <Link to={"/como-participar"} >
                                 <span>{"¿cómo participar?"}</span>
                             </Link>
                         </li>
@@ -106,7 +107,7 @@ export default function NavBar({ dimension }) {
                         </li>
                         <li key={5} className="nav-text">
                             <Link to={"/SUMATE"} >
-                                <span>{"hay razones"}</span>
+                                <span>{"CONOCE NUESTRAS secretarias"}</span>
                             </Link>
                         </li>
                         <li className='navbar-toggle'>
@@ -117,7 +118,7 @@ export default function NavBar({ dimension }) {
                                     </a>
                                 </div>
                                 <div style={{ padding: "5px" }}>
-                                    <a href="https://instagram.com" target={"_blank"} rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/jpro.lamatanza/" target={"_blank"} rel="noopener noreferrer">
                                         <FaInstagram className="iconSide" />
                                     </a>
                                 </div>

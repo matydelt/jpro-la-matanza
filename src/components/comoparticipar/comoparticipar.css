@@ -1,0 +1,135 @@
+.comoParticipar-box {
+  height: 100vh;
+  background: linear-gradient(
+    37deg,
+    rgba(160, 35, 130, 1) 0%,
+    rgba(195, 35, 85, 1) 53%,
+    rgba(230, 35, 40, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: gotham Rounded;
+}
+
+.sumate-button-comoP {
+  background-color: transparent;
+  border: white solid 1px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gotham Rounded", sand-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+}
+
+.sumate-button-comoP:hover {
+  background-color: #ffd205;
+  color: black;
+  border: none;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+@media (min-width: 993px) {
+  .buttons-container {
+    flex-wrap: wrap;
+  }
+  .sumate-button-comoP {
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 95px;
+    font-size: 19px;
+  }
+}
+.modal-contenido {
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+  color: black;
+  border: 0;
+}
+@media (max-width: 992px) {
+  .buttons-container {
+    flex-direction: column;
+  }
+  .modal-contenido {
+    margin-top: 120px;
+    width: 70%;
+    height: 60%;
+    font-size: 13px;
+  }
+  .sumate-button-comoP {
+    padding: 3px;
+    border-radius: 10px;
+    min-height: 65px;
+    width: 90% !important;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+#militarModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+#Fiscalizar-Modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+#charlas-Modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-btn {
+  padding: 7px 20px 7px 20px;
+  border-radius: 20px;
+  border: black solid 1px;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}
+.modal-btn:hover {
+  color: white;
+  background-color: rgb(85, 85, 85);
+}
+.text-modal {
+  color: rgb(85, 85, 85);
+}
+.exit-modal-btn {
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}
+.exit-modal-btn:hover {
+  color: black;
+}
+.btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.link-modal {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

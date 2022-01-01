@@ -74,7 +74,7 @@
         box-shadow: #666666 0px 1px;
     }
     .logoPro{
-        background-image: url("../../assets/9cc16b9f-81af-4f29-ae93-05c8150dc256.jfif");
+        background-image: url("../../assets/jpro-logo-nav.png");
         height: 93px;
         width: 100px;
         background-size: cover;
@@ -141,9 +141,9 @@
         box-shadow: #666666 0px 1px;
     }
     .logoPro{
-        background-image: url("../../assets/pro-logo.PNG");
-        height: 80px;
-        width: 70px;
+        background-image: url("../../assets/jpro-logo-nav.png");
+        height: 100px;
+        width: 100px;
         background-size: cover;
         
     }
@@ -222,9 +222,7 @@
         border-radius: 4px;
       }
       
-      .nav-text a:hover {
-        background-color:gray;
-      }
+     
       
       .nav-menu-items {
         width: 100%;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../footer/footer";
 import NavBar from "../navbar/navbar";
 import "./sumate.css"
 
@@ -15,7 +16,7 @@ export default function Sumate({ dimension }) {
         e.preventDefault();
         setSolicitud({ ...solicitud, [e.target.name]: e.target.value })
     }
-    return (<div style={{ width: "100%", height: "100vh" }} className="sumate-box">
+    return (<div style={{ height: "100vh" }} className="sumate-box">
         <NavBar dimension={dimension} />
         <div className="form-box" >
             <p className="title-sumate">SUMATE A MILITAR!</p>
@@ -48,6 +49,10 @@ export default function Sumate({ dimension }) {
             </form>
 
         </div>
+        <div style={dimension.width < 992 ? { display: "flex", alignItems: "flex-end", marginTop: "30px" } : { display: "flex", alignItems: "flex-end", marginTop: "25%" }}>
+            <Footer dimension={dimension}></Footer>
+        </div>
+
 
     </div>)
 }
