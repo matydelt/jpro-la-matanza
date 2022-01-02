@@ -21,9 +21,11 @@ export default function ComoParticipar({ dimension }) {
                 </div>
                 <div id="militarModal" className="modal">
                     <div class="modal-contenido">
+                        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                            <a className="exit-modal-btn" href="#">X</a>
+                        </div>
                         <div className="btn-box ">
                             <h2>¡SUMATE A MILITAR!</h2>
-                            <a className="exit-modal-btn" href="#">X</a>
                         </div>
                         <div>
                             <p className="text-modal">Te envitamos a que seas parte del equipo que codo a codo trabaja a lo largo de La Matanza ayudando a nuestra comunidad.
@@ -39,9 +41,11 @@ export default function ComoParticipar({ dimension }) {
                 </div>
                 <div id="Fiscalizar-Modal" className="modal">
                     <div className="modal-contenido">
+                        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                            <a className="exit-modal-btn" href="#">X</a>
+                        </div>
                         <div className="btn-box ">
                             <h2>¡Sumate A Fiscalizar!</h2>
-                            <a className="exit-modal-btn" href="#">X</a>
                         </div>
                         <div>
                             <p className="text-modal">La red de fiscales es fundamental en los año electorales.
@@ -58,9 +62,11 @@ export default function ComoParticipar({ dimension }) {
                 </div>
                 <div id="charlas-Modal" className="modal">
                     <div className="modal-contenido">
-                        <div className="btn-box ">
-                            <h2>¡Participa de charlas y capacitaciones!</h2>
+                        <div style={{ display: "flex", justifyContent: "flex-end" }}>
                             <a className="exit-modal-btn" href="#">X</a>
+                        </div>
+                        <div className="btn-box">
+                            <h2>¡Participa de charlas y capacitaciones!</h2>
                         </div>
                         <div>
                             <p className="text-modal">Desde PRO como espacio político fomentamos el debate y el enriquecimiento de ideas, profundizando y conversando de temas que nos importan.

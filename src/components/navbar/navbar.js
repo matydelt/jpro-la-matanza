@@ -7,9 +7,14 @@ import "./navbar.css"
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg"
 import { IoClose } from "react-icons/io5";
+import { AiOutlineCaretDown, AiOutlineCaretRight, AiOutlineCaretLeft } from "react-icons/ai";
 
 export default function NavBar({ dimension }) {
     const [sidebar, setSidebar] = React.useState(false);
+    const [submenu, setSubmenu] = React.useState(false);
+    const [pilares, setPilares] = React.useState(false);
+    const [subSidebar, setsubSidebar] = React.useState(true);
+    const [PilaresSide, setPilaresSide] = React.useState(true);
     const showSidebar = () => setSidebar(!sidebar);
     return (<div className="navBox">
         <div>
@@ -29,10 +34,18 @@ export default function NavBar({ dimension }) {
                         ¿COMO PARTICIPAR?
                     </Link>
                 </div>
-                <div>
-                    <Link to="/sumate" className="button">
-                        ¿Quienes somos?
-                    </Link>
+                <div className="button">
+                    <div style={{ textDecoration: "none" }} onClick={() => { setSubmenu(!submenu); setPilares(false) }}>¿Quienes somos?<AiOutlineCaretDown /></div>
+                    <div className={submenu ? "submenu" : "submenuOff"} id="submenu">
+                        <Link to="/Historia" className="menu-link" >Nuestra Historia</Link>
+                        <Link to="/Que-Pensamos" className="menu-link" >¿Que Pensamos?</Link>
+                        <div className="menu-link" onClick={() => setPilares(!pilares)}>Nuestros 3 Pilares <AiOutlineCaretRight /></div>
+                        <div className={pilares ? "submenu-pilares" : "submenuOff-pilares"}>
+                            <Link to="/Cercania" className="menu-link" >Cercanía</Link>
+                            <Link to="/Positividad" className="menu-link" >Positividad</Link>
+                            <Link to="/Futuro" className="menu-link" >Futuro</Link>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <Link to="/sumate" className="button">
@@ -84,32 +97,82 @@ export default function NavBar({ dimension }) {
 
                             </div>
                         </li>
-                        <li key={1} className="nav-text"
-                            style={{ marginTop: "30px" }}>
-                            <Link to={"/sumate"} >
-                                <span>{"sumate"}</span>
-                            </Link>
-                        </li>
-                        <li key={2} className="nav-text">
-                            <Link to={"/como-participar"} >
-                                <span>{"¿cómo participar?"}</span>
-                            </Link>
-                        </li>
-                        <li key={3} className="nav-text">
-                            <Link to={"/SUMATE"} >
-                                <span>{"¿Quienes somos?"}</span>
-                            </Link>
-                        </li>
-                        <li key={4} className="nav-text">
-                            <Link to={"/SUMATE"} >
-                                <span>{"¿qué estamos haciendo?"}</span>
-                            </Link>
-                        </li>
-                        <li key={5} className="nav-text">
-                            <Link to={"/SUMATE"} >
-                                <span>{"CONOCE NUESTRAS secretarias"}</span>
-                            </Link>
-                        </li>
+                        {subSidebar ?
+                            <div>
+                                <li key={1} className="nav-text"
+                                    style={{ marginTop: "30px" }}>
+                                    <Link to={"/sumate"} >
+                                        <span>{"sumate"}</span>
+                                    </Link>
+                                </li>
+                                <li key={2} className="nav-text">
+                                    <Link to={"/como-participar"} >
+                                        <span>{"¿cómo participar?"}</span>
+                                    </Link>
+                                </li>
+                                <li key={3} className="nav-text">
+                                    <Link to="" onClick={() => setsubSidebar(!subSidebar)}>
+
+                                        <span>{"¿Quienes somos?"}</span><AiOutlineCaretDown />
+                                    </Link>
+                                </li>
+                                <li key={4} className="nav-text">
+                                    <Link to={"/SUMATE"} >
+                                        <span>{"¿qué estamos haciendo?"}</span>
+                                    </Link>
+                                </li>
+                                <li key={5} className="nav-text">
+                                    <Link to={"/SUMATE"} >
+                                        <span>{"CONOCE NUESTRAS secretarias"}</span>
+                                    </Link>
+                                </li>
+                            </div> : PilaresSide ?
+                                <div>
+                                    <li key={1} className="nav-text">
+                                        <Link to="" onClick={() => setsubSidebar(!subSidebar)}>
+                                            <AiOutlineCaretLeft style={{ marginTop: "3px" }} /><span>{"volver"}</span>
+                                        </Link>
+                                    </li>
+                                    <li key={2} className="nav-text">
+                                        <Link to={"/Historia"} >
+                                            <span>{"Nuestra Historia"}</span>
+                                        </Link>
+                                    </li>
+                                    <li key={3} className="nav-text">
+                                        <Link to={"/Que-Pensamos"} >
+                                            <span>{"¿Que Pensamos?"}</span>
+                                        </Link>
+                                    </li>
+                                    <li key={4} className="nav-text">
+                                        <Link to={""} onClick={() => setPilaresSide(!PilaresSide)}>
+                                            <span>{"Nuestros 3 pilares"}</span><AiOutlineCaretRight style={{ marginTop: "3px" }} />
+                                        </Link>
+                                    </li>
+                                </div> :
+                                <div>
+                                    <li key={1} className="nav-text">
+                                        <Link to="" onClick={() => { setsubSidebar(!subSidebar); setPilaresSide(!PilaresSide) }}>
+                                            <AiOutlineCaretLeft style={{ marginTop: "3px" }} /><span>{"volver"}</span>
+                                        </Link>
+                                    </li>
+                                    <li key={2} className="nav-text">
+                                        <Link to={"/Cercania"} >
+                                            <span>{"Cercanía"}</span>
+                                        </Link>
+                                    </li>
+                                    <li key={3} className="nav-text">
+                                        <Link to={"/Positividad"} >
+                                            <span>{"Positividad"}</span>
+                                        </Link>
+                                    </li>
+                                    <li key={4} className="nav-text">
+                                        <Link to={"/Futuro"} >
+                                            <span>{"Futuro"}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+
+                        }
                         <li className='navbar-toggle'>
                             <div className="icons-box">
                                 <div style={{ padding: "5px" }}>

@@ -59,6 +59,11 @@
   color: black;
   border: 0;
 }
+@media (max-height: 731px) {
+  .comoParticipar-box {
+    margin-top: -33px;
+  }
+}
 @media (max-width: 992px) {
   .buttons-container {
     flex-direction: column;
@@ -66,7 +71,7 @@
   .modal-contenido {
     margin-top: 120px;
     width: 70%;
-    height: 60%;
+    height: auto;
     font-size: 13px;
   }
   .sumate-button-comoP {
@@ -127,7 +132,7 @@
 }
 .btn-box {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .link-modal {
   margin-top: 20px;
