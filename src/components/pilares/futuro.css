@@ -13,16 +13,32 @@
   padding-bottom: 7%;
   font-size: 20px;
 }
-.futuro-box {
-  background-image: url("../../assets/futuro.jfif");
-  width: 100%;
-  background-size: cover;
-  height: 100%;
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-position: center center;
+@media (min-width: 992px) {
+  .futuro-box {
+    background-image: url("../../assets/futuro.jfif");
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center center;
+  }
+}
+@media (max-width: 992px) {
+  .futuro-box {
+    background-image: url("../../assets/futuro-mv.jfif");
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25%;
+    background-position: center center;
+  }
 }
 .text-historia {
   margin: 10px 80px;
