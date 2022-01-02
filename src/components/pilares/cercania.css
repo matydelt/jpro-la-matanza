@@ -13,8 +13,8 @@
   padding-bottom: 7%;
   font-size: 20px;
 }
-.nosotros-box {
-  background-image: url("../../assets/bg-nosotros.jpg");
+.cercania-box {
+  background-image: url("../../assets/cercania.jfif");
   width: 100%;
   background-size: cover;
   height: 100%;
@@ -24,24 +24,7 @@
   justify-content: center;
   background-position: center center;
 }
-.diego-box {
-  background-image: url("../../assets/diego.jfif");
-  width: 100%;
-  min-height: 350px;
-  justify-content: center;
-  background-position: start center;
-}
-.reunion-box {
-  background-image: url("../../assets/jpro-reunion.jfif");
-  width: 100%;
-  background-size: cover;
-  height: 100%;
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-position: center center;
-}
+
 .text-historia {
   margin: 10px 80px;
 }

@@ -42,7 +42,7 @@ export default function NavBar({ dimension }) {
                         <div className="menu-link" onClick={() => setPilares(!pilares)}>Nuestros 3 Pilares <AiOutlineCaretRight /></div>
                         <div className={pilares ? "submenu-pilares" : "submenuOff-pilares"}>
                             <Link to="/Cercania" className="menu-link" >Cercanía</Link>
-                            <Link to="/Positividad" className="menu-link" >Positividad</Link>
+                            <Link to="/positivismo" className="menu-link" >positivismo</Link>
                             <Link to="/Futuro" className="menu-link" >Futuro</Link>
                         </div>
                     </div>
@@ -161,8 +161,8 @@ export default function NavBar({ dimension }) {
                                         </Link>
                                     </li>
                                     <li key={3} className="nav-text">
-                                        <Link to={"/Positividad"} >
-                                            <span>{"Positividad"}</span>
+                                        <Link to={"/positivismo"} >
+                                            <span>{"positivismo"}</span>
                                         </Link>
                                     </li>
                                     <li key={4} className="nav-text">

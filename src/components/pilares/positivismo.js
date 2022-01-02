@@ -1,14 +1,14 @@
 import React from "react";
 import NavBar from "../navbar/navbar";
-import "./historia.css"
+import "./positivismo.css"
 import Footer from "../footer/footer"
 
-export default function Historia({ dimension }) {
+export default function Positivismo({ dimension }) {
 
     return (<div>
         <NavBar dimension={dimension} />
         <div className="Historia-box">
-            <div className="nosotros-box"><h2 style={{ display: "flex", justifyContent: "center" }}>Nuestra Historia</h2></div>
+            <div className="positivismo-box"><h2 style={{ display: "flex", justifyContent: "center" }}>Positivismo</h2></div>
             <div>
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
 
