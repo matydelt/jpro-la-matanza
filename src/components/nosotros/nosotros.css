@@ -1,0 +1,51 @@
+.nosotros-container {
+  padding-top: 10%;
+  height: auto;
+  background-color: #ebebeb;
+}
+.importante-box {
+  display: flex;
+  justify-content: center;
+}
+.person-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0px 10px 0px 10px;
+}
+.diego {
+  background-image: url("../../assets/93817c1b-fd61-4c7a-a250-da4aa843e1c9.png");
+}
+.iconPerson {
+  width: 40px;
+  height: 20px;
+  color: #333;
+}
+.iconPerson:hover {
+  color: rgb(105, 105, 105);
+}
+.Persons-container {
+  display: flex;
+  justify-content: center;
+}
+.consejales-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.discurso {
+  font-family: Gotham Rounded light;
+}
+.discurso-box {
+  color: rgb(83, 82, 82);
+  width: 50%;
+}
+@media (min-width: 992px) {
+}

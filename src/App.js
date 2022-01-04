@@ -9,6 +9,9 @@ import Historia from './components/historia/historia';
 import Positivismo from './components/pilares/positivismo';
 import Cercania from './components/pilares/cercania';
 import Futuro from './components/pilares/futuro';
+import QuePensamos from './components/quepensamos/quepensamos';
+import Secretarias from './components/secretarias/secretarias';
+import Nosotros from './components/nosotros/nosotros';
 
 function App() {
   const [dimension, updateDimention] = useState({ width: window.innerWidth, height: window.innerHeight });
@@ -31,6 +34,9 @@ function App() {
         <Route path="/Futuro" element={<Futuro dimension={dimension} />} />
         <Route path="/Cercania" element={<Cercania dimension={dimension} />} />
         <Route path="/Positivismo" element={<Positivismo dimension={dimension} />} />
+        <Route path="/que-pensamos" element={<QuePensamos dimension={dimension} />} />
+        <Route path="/Nuestras-Secretarias" element={<Secretarias dimension={dimension} />} />
+        <Route path="/Nosotros" element={<Nosotros dimension={dimension} />} />
       </Routes>
     </div>
   );

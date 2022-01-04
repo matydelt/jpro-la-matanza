@@ -61,7 +61,14 @@
 }
 @media (max-height: 731px) {
   .comoParticipar-box {
-    margin-top: -33px;
+    /* margin-top: -5%; */
+  }
+}
+@media (max-height: 731px) {
+  @media (max-width: 411px) {
+  }
+  .comoParticipar-box {
+    margin-top: -2%;
   }
 }
 @media (max-width: 992px) {

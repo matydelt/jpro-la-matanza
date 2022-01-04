@@ -38,6 +38,7 @@ export default function NavBar({ dimension }) {
                     <div style={{ textDecoration: "none" }} onClick={() => { setSubmenu(!submenu); setPilares(false) }}>¿Quienes somos?<AiOutlineCaretDown /></div>
                     <div className={submenu ? "submenu" : "submenuOff"} id="submenu">
                         <Link to="/Historia" className="menu-link" >Nuestra Historia</Link>
+                        <Link to="/Nosotros" className="menu-link" >Nosotros</Link>
                         <Link to="/Que-Pensamos" className="menu-link" >¿Que Pensamos?</Link>
                         <div className="menu-link" onClick={() => setPilares(!pilares)}>Nuestros 3 Pilares <AiOutlineCaretRight /></div>
                         <div className={pilares ? "submenu-pilares" : "submenuOff-pilares"}>
@@ -53,7 +54,7 @@ export default function NavBar({ dimension }) {
                     </Link>
                 </div>
                 <div>
-                    <Link to="/sumate" className="button">
+                    <Link to="/Nuestras-Secretarias" className="button">
                         CONOCE NUESTRAS secretarias
                     </Link>
                 </div>
@@ -122,7 +123,7 @@ export default function NavBar({ dimension }) {
                                     </Link>
                                 </li>
                                 <li key={5} className="nav-text">
-                                    <Link to={"/SUMATE"} >
+                                    <Link to={"/Nuestras-Secretarias"} >
                                         <span>{"CONOCE NUESTRAS secretarias"}</span>
                                     </Link>
                                 </li>

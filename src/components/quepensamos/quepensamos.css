@@ -13,9 +13,10 @@
   padding-bottom: 7%;
   font-size: 20px;
 }
+
 @media (min-width: 992px) {
-  .futuro-box {
-    background-image: url("../../assets/futuro.jfif");
+  .quePensamos-box {
+    background-image: url("../../assets/que-pensamos.jfif");
     width: 100%;
     background-size: cover;
     height: 100%;
@@ -27,8 +28,8 @@
   }
 }
 @media (max-width: 992px) {
-  .futuro-box {
-    background-image: url("../../assets/futuro-mv.jfif");
+  .quePensamos-box {
+    background-image: url("../../assets/que-pensamos.jfif");
     width: 100%;
     background-size: cover;
     height: 100%;
@@ -36,10 +37,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 15%;
     background-position: center center;
   }
 }
 .text-historia {
   margin: 10px 80px;
+}
+
+.sumate-btn {
+  padding: 7px 40px 7px 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sumate-btn:hover {
+  color: #333;
+  background-color: #ffc107;
 }

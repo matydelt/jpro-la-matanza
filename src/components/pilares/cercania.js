@@ -2,25 +2,24 @@ import React from "react";
 import NavBar from "../navbar/navbar";
 import "./cercania.css"
 import Footer from "../footer/footer"
+import { Link } from "react-router-dom";
 
 export default function Cercania({ dimension }) {
 
     return (<div>
         <NavBar dimension={dimension} />
         <div className="Historia-box">
-            <div className="cercania-box"><h2 style={{ display: "flex", justifyContent: "center" }}>Cercanía</h2></div>
+            <div className="cercania-box"><h2 style={{ display: "flex", justifyContent: "center", textShadow: "1px 1px 2px black" }}>Cercanía</h2></div>
             <div>
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
 
-                    <h5 style={dimension.width > 900 ? { width: "40%" } : { width: "90%" }}>Todo esto empezó cuando en la crisis del 2001 todos los argentinos sentimos que los políticos habían dejado de representarnos. Fue ahí donde decidimos tomar una postura más activa, y convertirnos en protagonistas de la historia, cambiando las cosas nosotros mismos. Ese fue el impulso inicial que dio origen al PRO.</h5>
-                </div>
-                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-
-                    <h5 style={dimension.width > 900 ? { width: "40%" } : { width: "90%" }}>Estamos convencidos que debemos trabajar con valores, honestidad, trabajo y diálogo. Defendiendo la libertad y la democracia. Creemos que cambiar la realidad en la que vivimos lleva tiempo y esfuerzo. Y no nos resignamos a vivir así, porque creemos que vale la pena pelear por nuestro país, por nuestra provincia y por nuestro municipio.
-                        Somos el futuro que hará historia y nos dará una oportunidad de vivir en nuestro país, queremos que vos también seas parte de esto!.</h5>
+                    <h5 style={dimension.width > 900 ? { width: "40%" } : { width: "90%" }}>Establece el lugar desde el cual hacemos política y para quién, dónde debemos ponernos en el lugar del otro.
+                        En el siglo XX la política era en sentido verticalista, donde lo que se buscaba era liderar las masas, con un rasgo paternalista que se observa en las masas con la sumisión y admiración hacia sus líderes. Las políticas del siglo XXI, se caracterizan por ser horizontales, caracterizadas por la cercanía, el diálogo, pero por sobre todo la escucha. Entendiendo lo que al otro le pasa, sintiendo lo que el otro siente. Cuando deseamos ser cercanos debemos serlo primero con nosotros mismos, siendo auténticos, ya que es lo que nos permitirá lograr la empatía y la comunicación  en el plano emocional, aliando nuestro sentir, con el decir y el hacer, y permitiéndonos ser vulnerables, ya que nadie espera la perfección, se espera que seamos humanos, para de esta manera ser más fuerte y confiable para todos.</h5>
                 </div>
             </div>
-
+            <Link to="/sumate">
+                <button className="sumate-btn">SUMATE</button>
+            </Link>
         </div>
 
         <div style={{ height: "100%", display: "flex", alignItems: "flex-end" }}>

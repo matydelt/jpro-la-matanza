@@ -71,10 +71,14 @@ export default function HomePage({ dimension }) {
                     </div>
                     <h3>FACEBOOK</h3>
                     <div className="center" style={dimension.width > 1000 ? { marginLeft: "30px", borderRadius: "10px" } : {}}>
-                        <iframe style={{ marginLeft: "10px", border: "none", overflow: "hidden" }} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe style={dimension.width < 992 ? { marginLeft: "35px", overflow: "hidden" } : { marginLeft: "10px", overflow: "hidden" }} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                     <h3>TWITTER</h3>
-                    <TwitterTimelineEmbed sourceType="TwitterDev" profile="TwitterDev" list="" screenName="TwitterDev" theme="dark" options={dimension.width > 900 ? { height: 500, width: 600 } : { height: 400 }} />
+                    <div style={dimension.width < 992 ? { width: "90%", display: "flex", justifyContent: "center", marginLeft: "6.5%" } : { width: "90%", display: "flex", justifyContent: "center", marginLeft: "5%" }}>
+                        <div>
+                            <TwitterTimelineEmbed sourceType="TwitterDev" profile="TwitterDev" list="" screenName="TwitterDev" theme="dark" width="90%" options={dimension.width > 900 ? { height: 500, width: 600 } : { height: 400 }} />
+                        </div>
+                    </div>
                     <h3>ESCUCHA NUESTRAS CANCIONES</h3>
                     <div className="center">
                         <iframe src="https://open.spotify.com/embed/playlist/02lMgLRmrpflA4IkQdCzB3" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>

@@ -2,25 +2,23 @@ import React from "react";
 import NavBar from "../navbar/navbar";
 import "./positivismo.css"
 import Footer from "../footer/footer"
+import { Link } from "react-router-dom";
 
 export default function Positivismo({ dimension }) {
 
     return (<div>
         <NavBar dimension={dimension} />
         <div className="Historia-box">
-            <div className="positivismo-box"><h2 style={{ display: "flex", justifyContent: "center" }}>Positivismo</h2></div>
+            <div className="positivismo-box"><h2 style={{ display: "flex", justifyContent: "center", textShadow: "1px 1px 2px black" }}>Positivismo</h2></div>
             <div>
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
 
-                    <h5 style={dimension.width > 900 ? { width: "40%" } : { width: "90%" }}>Todo esto empezó cuando en la crisis del 2001 todos los argentinos sentimos que los políticos habían dejado de representarnos. Fue ahí donde decidimos tomar una postura más activa, y convertirnos en protagonistas de la historia, cambiando las cosas nosotros mismos. Ese fue el impulso inicial que dio origen al PRO.</h5>
-                </div>
-                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-
-                    <h5 style={dimension.width > 900 ? { width: "40%" } : { width: "90%" }}>Estamos convencidos que debemos trabajar con valores, honestidad, trabajo y diálogo. Defendiendo la libertad y la democracia. Creemos que cambiar la realidad en la que vivimos lleva tiempo y esfuerzo. Y no nos resignamos a vivir así, porque creemos que vale la pena pelear por nuestro país, por nuestra provincia y por nuestro municipio.
-                        Somos el futuro que hará historia y nos dará una oportunidad de vivir en nuestro país, queremos que vos también seas parte de esto!.</h5>
+                    <h5 style={dimension.width > 900 ? { width: "40%" } : { width: "90%" }}> La positividad es la forma en la caramos la vida, es el hacer transformador, enfocados siempre en lo que hacemos a hacer, sintiendo una gran atracción por el presente, sin negar el problema, las dificultades o límites. Donde reconocemos que aquello que no podemos evitar podemos darle una respuesta. Entendiendo que somos responsables de nuestro futuro.</h5>
                 </div>
             </div>
-
+            <Link to="/sumate">
+                <button className="sumate-btn">SUMATE</button>
+            </Link>
         </div>
 
         <div style={{ height: "100%", display: "flex", alignItems: "flex-end" }}>

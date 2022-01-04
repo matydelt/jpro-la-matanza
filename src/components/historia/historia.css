@@ -24,13 +24,7 @@
   justify-content: center;
   background-position: center center;
 }
-.diego-box {
-  background-image: url("../../assets/diego.jfif");
-  width: 100%;
-  min-height: 350px;
-  justify-content: center;
-  background-position: start center;
-}
+
 .reunion-box {
   background-image: url("../../assets/jpro-reunion.jfif");
   width: 100%;
