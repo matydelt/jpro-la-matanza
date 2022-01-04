@@ -23,6 +23,26 @@
 .diego {
   background-image: url("../../assets/93817c1b-fd61-4c7a-a250-da4aa843e1c9.png");
 }
+.hernan {
+  background-image: url("../../assets/hernan.jfif");
+  background-size: cover;
+}
+.mirta {
+  background-image: url("../../assets/mirta.jfif");
+  background-size: cover;
+}
+.greco {
+  background-image: url("../../assets/greco.jfif");
+  background-size: cover;
+}
+.lamba {
+  background-image: url("../../assets/lamba.jfif");
+  background-size: cover;
+}
+.ricky {
+  background-image: url("../../assets/yñiguez.jfif");
+  background-size: cover;
+}
 .iconPerson {
   width: 40px;
   height: 20px;
@@ -47,5 +67,16 @@
   color: rgb(83, 82, 82);
   width: 50%;
 }
+@media (max-width: 992px) {
+  .consejales-container {
+    flex-direction: column;
+  }
+}
 @media (min-width: 992px) {
+  .consejales-container {
+    flex-direction: row;
+  }
+}
+.name-box {
+  font-family: gotham Rounded;
 }

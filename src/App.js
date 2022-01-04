@@ -36,7 +36,7 @@ function App() {
         <Route path="/Positivismo" element={<Positivismo dimension={dimension} />} />
         <Route path="/que-pensamos" element={<QuePensamos dimension={dimension} />} />
         <Route path="/Nuestras-Secretarias" element={<Secretarias dimension={dimension} />} />
-        <Route path="/Nosotros" element={<Nosotros dimension={dimension} />} />
+        <Route path="/Representantes" element={<Nosotros dimension={dimension} />} />
       </Routes>
     </div>
   );
