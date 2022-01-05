@@ -21,7 +21,7 @@ export default function Footer({ dimension }) {
                 </a>
             </div>
             <div style={{ padding: "5px" }}>
-                <a href="https://twitter.com" target={"_blank"} rel="noopener noreferrer" >
+                <a href="https://twitter.com/jprolamatanzaok" target={"_blank"} rel="noopener noreferrer" >
                     <FaTwitter color="white" className="iconfooter " style={dimension.width > 900 ? {} : {}} />
                 </a>
             </div>

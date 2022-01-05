@@ -24,7 +24,13 @@
   justify-content: center;
   background-position: center center;
 }
-
+@media (min-width: 992px) {
+  @media (min-height: 1023px) {
+    .nosotros-box {
+      height: 100vh;
+    }
+  }
+}
 .reunion-box {
   background-image: url("../../assets/jpro-reunion.jfif");
   width: 100%;

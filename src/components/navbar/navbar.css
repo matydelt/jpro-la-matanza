@@ -67,7 +67,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
     transition: 0.3s;
     height: 70px;
     padding: 10px;
@@ -148,7 +148,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
     transition: 0.3s;
     height: 70px;
     padding: 10px;
@@ -216,7 +216,7 @@
     background-size: cover;
   }
   .navbar {
-    background-color: white;
+    background-color: rgb(247, 247, 247);
     height: 80px;
     width: 100%;
     display: flex;

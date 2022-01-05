@@ -49,7 +49,7 @@ export default function NavBar({ dimension }) {
                     </div>
                 </div>
                 <div>
-                    <Link to="/sumate" className="button">
+                    <Link to="/Que-Estamos-Haciendo" className="button">
                         ¿que estamos haciendo?
                     </Link>
                 </div>
@@ -60,7 +60,7 @@ export default function NavBar({ dimension }) {
                 </div>
                 <div className="icons-box">
                     <div style={{ padding: "5px" }}>
-                        <a href="https://facebook.com" target={"_blank"} rel="noopener noreferrer">
+                        <a href="https://facebook.com/jprolamatanzaok" target={"_blank"} rel="noopener noreferrer">
                             <FaFacebookF className="icon" />
                         </a>
                     </div>
@@ -70,7 +70,7 @@ export default function NavBar({ dimension }) {
                         </a>
                     </div>
                     <div style={{ padding: "5px" }}>
-                        <a href="https://twitter.com" target={"_blank"} rel="noopener noreferrer" >
+                        <a href="https://twitter.com/jprolamatanzaok" target={"_blank"} rel="noopener noreferrer" >
                             <FaTwitter className="icon" />
                         </a>
                     </div>
@@ -182,7 +182,7 @@ export default function NavBar({ dimension }) {
                         <li className='navbar-toggle'>
                             <div className="icons-box">
                                 <div style={{ padding: "5px" }}>
-                                    <a href="https://facebook.com" target={"_blank"} rel="noopener noreferrer">
+                                    <a href="https://facebook.com/jprolamatanzaok" target={"_blank"} rel="noopener noreferrer">
                                         <FaFacebookF className="iconSide" />
                                     </a>
                                 </div>
@@ -192,7 +192,7 @@ export default function NavBar({ dimension }) {
                                     </a>
                                 </div>
                                 <div style={{ padding: "5px" }}>
-                                    <a href="https://twitter.com" target={"_blank"} rel="noopener noreferrer" >
+                                    <a href="https://twitter.com/jprolamatanzaok" target={"_blank"} rel="noopener noreferrer" >
                                         <FaTwitter className="iconSide" />
                                     </a>
                                 </div>

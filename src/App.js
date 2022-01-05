@@ -12,6 +12,7 @@ import Futuro from './components/pilares/futuro';
 import QuePensamos from './components/quepensamos/quepensamos';
 import Secretarias from './components/secretarias/secretarias';
 import Nosotros from './components/nosotros/nosotros';
+import QueHacemos from './components/quehacemos/quehacemos';
 
 function App() {
   const [dimension, updateDimention] = useState({ width: window.innerWidth, height: window.innerHeight });
@@ -36,7 +37,8 @@ function App() {
         <Route path="/Positivismo" element={<Positivismo dimension={dimension} />} />
         <Route path="/que-pensamos" element={<QuePensamos dimension={dimension} />} />
         <Route path="/Nuestras-Secretarias" element={<Secretarias dimension={dimension} />} />
-        <Route path="/Representantes" element={<Nosotros dimension={dimension} />} />
+        <Route path="/Representantes" element={<Nosotros dimension={dimension} />} />Que-Estamos-Haciendo
+        <Route path="/Que-Estamos-Haciendo" element={<QueHacemos dimension={dimension} />} />
       </Routes>
     </div>
   );

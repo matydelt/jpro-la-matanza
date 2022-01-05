@@ -69,15 +69,15 @@ export default function HomePage({ dimension }) {
                     <div className="center" >
                         <iframe options={{ width: 320, height: 550 }} src="https://instagram.com/p/CXpJkCxAjTi/embed" frameBorder="0" style={dimension.width > 1000 ? { marginRight: "10px", borderRadius: "10px", minHeight: "500px" } : { marginLeft: "6px", borderRadius: "10px", minHeight: "500px" }}></iframe>
                     </div>
-                    <h3>FACEBOOK</h3>
-                    <div className="center" style={dimension.width > 1000 ? { borderRadius: "10px" } : {}}>
-                        <iframe style={dimension.width < 992 ? {} : { overflow: "hidden" }} src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjprolamatanzaok%2Fphotos%2Fa.100448502513051%2F100448552513046%2F&show_text=true&width=250" width="300" height="500" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                    </div>
                     <h3>TWITTER</h3>
                     <div style={dimension.width < 992 ? { width: "90%", display: "flex", justifyContent: "center", marginLeft: "6.5%" } : { width: "90%", display: "flex", justifyContent: "center", marginLeft: "5%" }}>
                         <div>
                             <TwitterTimelineEmbed sourceType="jprolamatanzaok" profile="jprolamatanzaok" list="" screenName="jprolamatanzaok" theme="dark" width="90%" options={dimension.width > 900 ? { height: 500, width: 600 } : { height: 400 }} />
                         </div>
+                    </div>
+                    <h3>FACEBOOK</h3>
+                    <div className="center" style={dimension.width > 1000 ? { borderRadius: "10px" } : {}}>
+                        <iframe style={dimension.width < 992 ? {} : { overflow: "hidden" }} src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjprolamatanzaok%2Fphotos%2Fa.100448502513051%2F100448552513046%2F&show_text=true&width=250" width="300" height="500" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                     <h3>ESCUCHA NUESTRAS CANCIONES</h3>
                     <div className="center">

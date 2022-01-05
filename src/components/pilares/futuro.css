@@ -18,7 +18,7 @@
     background-image: url("../../assets/futuro.jfif");
     width: 100%;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     min-height: 450px;
     display: flex;
     flex-direction: column;
@@ -36,8 +36,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20%;
     background-position: center center;
+  }
+}
+@media (max-width: 992px) {
+  @media (min-height: 1023px) {
+    .futuro-box {
+      height: 100vh;
+    }
   }
 }
 .text-historia {
