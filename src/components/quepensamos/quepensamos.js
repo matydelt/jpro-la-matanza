@@ -9,7 +9,7 @@ export default function QuePensamos({ dimension }) {
     return (<div>
         <NavBar dimension={dimension} />
         <div className="Historia-box">
-            <div className="quePensamos-box"><h2 style={{ display: "flex", justifyContent: "center", textShadow: "1px 1px 2px black", marginBottom: "10%" }}>¿Que Pensamos?</h2></div>
+            <div className="quePensamos-box"><h2 style={dimension.width > 992 ? { display: "flex", justifyContent: "center", textShadow: "1px 1px 2px black", marginBottom: "10%" } : { display: "flex", justifyContent: "center", textShadow: "1px 1px 2px black", marginBottom: "50%" }}>¿Que Pensamos?</h2></div>
             <div>
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
 

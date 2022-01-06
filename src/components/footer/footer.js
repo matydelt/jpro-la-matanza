@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import "./footer.css"
 export default function Footer({ dimension }) {
     return (<div className="footer-box">
-        <div style={{ width: "100%" }}>
+        <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
             <Link to="/" >
-                <div className="image-box-footer" style={dimension.width > 900 ? { left: "47.5%" } : { left: "36.5%" }}></div>
+                <div className="image-box-footer"></div>
             </Link>
         </div>
         <div className="redes-box">
