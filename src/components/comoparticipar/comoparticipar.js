@@ -8,7 +8,7 @@ export default function ComoParticipar({ dimension }) {
 
     return (<div style={{ height: "100vh" }}>
         <NavBar dimension={dimension}></NavBar>
-        <div style={dimension.width < 992 ? { marginTop: "17vh" } : { marginTop: "10vh" }}>
+        <div style={{ marginTop: "100px" }}>
             <div className="comoParticipar-box">
                 <h2 style={{ marginTop: "5%" }}>¿COMO PARTICIPAR?</h2>
                 <div className="buttons-container">

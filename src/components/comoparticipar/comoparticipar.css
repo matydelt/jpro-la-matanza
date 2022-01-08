@@ -59,11 +59,7 @@
   color: black;
   border: 0;
 }
-@media (max-height: 731px) {
-  .comoParticipar-box {
-    /* margin-top: -5%; */
-  }
-}
+
 @media (max-height: 731px) {
   @media (max-width: 411px) {
   }
