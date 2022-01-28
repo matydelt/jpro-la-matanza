@@ -30,23 +30,13 @@ export default function Sumate({ dimension }) {
                     </div>
                     <form className="form-sumate" action="https://formsubmit.co/matymanda@hotmail.com" method="POST">
                         <input type="hidden" name="_template" value="table" />
+                        <Input name="nombre" type={"text"} value={solicitud.nombre} placeholder="ingresa tu nombre" onChange={onChange} ></Input>
+                        <Input name="apellido" value={solicitud.apellido} placeholder="ingresa tu apellido" onChange={onChange}></Input>
+                        <Input name="email" value={solicitud.email} type={"email"} placeholder="ingresa tu Email" onChange={onChange}></Input>
+                        <Input name="telefono" value={solicitud.telefono} type={"tel"} placeholder="ingresa tu telefono" onChange={onChange}></Input>
+                        <Input name="localidad" value={solicitud.localidad} placeholder="ingresa tu Localidad" onChange={onChange} ></Input>
                         <div className="input-box">
-                            <input className="input-sumate" name="nombre" type={"text"} value={solicitud.nombre} placeholder="ingresa tu nombre" onChange={onChange} required />
-                        </div>
-                        <div className="input-box">
-                            <input className="input-sumate" name="apellido" value={solicitud.apellido} placeholder="ingresa tu apellido" onChange={onChange} required />
-                        </div>
-                        <div className="input-box">
-                            <input className="input-sumate" name="email" value={solicitud.email} type={"email"} placeholder="ingresa tu Email" onChange={onChange} required />
-                        </div>
-                        <div className="input-box">
-                            <input className="input-sumate" name="telefono" value={solicitud.telefono} type={"tel"} placeholder="ingresa tu telefono" onChange={onChange} required />
-                        </div>
-                        <div className="input-box">
-                            <input className="input-sumate" name="localidad" value={solicitud.localidad} placeholder="ingresa tu Localidad" onChange={onChange} required />
-                        </div>
-                        <div className="input-box">
-                            <input value={"Enviar"} type={"submit"} />
+                            <input value={"Enviar"} type={"submit"} className="btn-enviar" />
                         </div>
                     </form>
 
@@ -56,4 +46,12 @@ export default function Sumate({ dimension }) {
             </div>
             <Footer dimension={dimension} ></Footer>
         </div>)
+}
+
+function Input({ name, value, onChange, placeholder, type }) {
+    return (
+        <div className="input-box">
+            <input className="input-sumate" name={name} type={type} value={value} placeholder={placeholder} onChange={onChange} required />
+        </div>
+    )
 }

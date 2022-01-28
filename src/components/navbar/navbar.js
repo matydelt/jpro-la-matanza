@@ -48,11 +48,11 @@ export default function NavBar({ dimension }) {
                         </div>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <Link to="/Que-Estamos-Haciendo" className="button">
                         ¿que estamos haciendo?
                     </Link>
-                </div>
+                </div> */}
                 <div>
                     <Link to="/Nuestras-Secretarias" className="button">
                         CONOCE NUESTRAS secretarias
@@ -117,11 +117,11 @@ export default function NavBar({ dimension }) {
                                         <span>{"¿Quienes somos?"}</span><AiOutlineCaretDown />
                                     </Link>
                                 </li>
-                                <li key={4} className="nav-text">
+                                {/* <li key={4} className="nav-text">
                                     <Link to={"/SUMATE"} >
                                         <span>{"¿qué estamos haciendo?"}</span>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li key={5} className="nav-text">
                                     <Link to={"/Nuestras-Secretarias"} >
                                         <span>{"CONOCE NUESTRAS secretarias"}</span>
