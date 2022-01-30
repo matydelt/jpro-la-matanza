@@ -28,7 +28,7 @@ export default function Sumate({ dimension }) {
                             Necesitamos de personas que se involucren, ya que hay mucho por hacer y vos podes ser parte de este enorme proyecto de cambiar La Matanza.
                             ¡Te esperamos!</p>
                     </div>
-                    <form className="form-sumate" action="https://formsubmit.co/matymanda@hotmail.com" method="POST">
+                    <form className="form-sumate" action="https://formsubmit.co/jprolamatanzaok@gmail.com" method="POST">
                         <input type="hidden" name="_template" value="table" />
                         <Input name="nombre" type={"text"} value={solicitud.nombre} placeholder="ingresa tu nombre" onChange={onChange} ></Input>
                         <Input name="apellido" value={solicitud.apellido} placeholder="ingresa tu apellido" onChange={onChange}></Input>

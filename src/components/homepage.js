@@ -67,7 +67,7 @@ export default function HomePage({ dimension }) {
                     <h2>¡SEGUINOS EN NUESTRAS REDES!</h2>
                     <h3>INSTAGRAM</h3>
                     <div className="center" >
-                        <iframe options={{ width: 320, height: 550 }} src="https://instagram.com/p/CXpJkCxAjTi/embed" frameBorder="0" style={dimension.width > 1000 ? { marginRight: "10px", borderRadius: "10px", minHeight: "500px" } : { marginLeft: "6px", borderRadius: "10px", minHeight: "500px" }}></iframe>
+                        <iframe width={dimension.width <= 280 ? "250" : "350"} src="https://instagram.com/p/CXpJkCxAjTi/embed" frameBorder="0" style={dimension.width > 1000 ? { marginRight: "10px", borderRadius: "10px", minHeight: "550px" } : { marginLeft: "6px", borderRadius: "10px", minHeight: "500px" }}></iframe>
                     </div>
                     <h3>TWITTER</h3>
                     <div style={dimension.width < 992 ? { width: "90%", display: "flex", justifyContent: "center", marginLeft: "6.5%" } : { width: "90%", display: "flex", justifyContent: "center", marginLeft: "5%" }}>
@@ -77,11 +77,11 @@ export default function HomePage({ dimension }) {
                     </div>
                     <h3>FACEBOOK</h3>
                     <div className="center" style={dimension.width > 1000 ? { borderRadius: "10px" } : {}}>
-                        <iframe style={dimension.width < 992 ? {} : { overflow: "hidden" }} src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjprolamatanzaok%2Fphotos%2Fa.100448502513051%2F100448552513046%2F&show_text=true&width=250" width="300" height="500" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe style={dimension.width < 280 || dimension.width < 900 ? { width: 260, height: 550 } : { overflow: "hidden" }} src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjprolamatanzaok%2Fphotos%2Fa.100448502513051%2F100448552513046%2F&show_text=true&width=250" width="300" height="500" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                     <h3>ESCUCHA NUESTRAS CANCIONES</h3>
-                    <div className="center">
-                        <iframe src="https://open.spotify.com/embed/playlist/02lMgLRmrpflA4IkQdCzB3" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+                    <div className="center" >
+                        <iframe src="https://open.spotify.com/embed/playlist/02lMgLRmrpflA4IkQdCzB3" width="260" height="380" frameBorder="0" allow="encrypted-media"></iframe>
                     </div>
 
                 </div>
