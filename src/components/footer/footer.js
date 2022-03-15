@@ -11,7 +11,7 @@ export default function Footer({ dimension }) {
         </div>
         <div className="redes-box">
             <div style={{ padding: "5px", alignItems: "flex-end" }}>
-                <a href="https://facebook.com" target={"_blank"} rel="noopener noreferrer">
+                <a href="https://www.facebook.com/jprolamatanzaok" target={"_blank"} rel="noopener noreferrer">
                     <FaFacebookF color="white" className="iconfooter" style={dimension.width > 900 ? {} : {}} />
                 </a>
             </div>

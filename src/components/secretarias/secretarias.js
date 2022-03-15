@@ -16,30 +16,30 @@ export default function Secretarias({ dimension }) {
             />
             <Card
                 type={"Comunicación"}
-                image={"Actas"}
+                image={"comunicacion"}
                 text={"En esta área se plantean estrategias para comunicar todas las actividades que realizamos en el espacio, tanto interno del espacio como hacia el afuera para que todos los vecinos puedan saber del trabajo que los Jóvenes PRO La Matanza realizamos día a día con mucho esfuerzo. Donde no solo se muestran actividades sino también información, y lo que pensamos como fuerza política. "}
             />
             <Card
                 type={"Ambiente"}
-                image={"AccionPolitica"}
+                image={"ambiente"}
                 text={"No existe crecimiento posible sin un desarrollo sustentable. Desde la Secretaría de Ambiente trabajaremos para proponer e impulsar políticas públicas que preserven el ecosistema municipal y el medio ambiente en su totalidad. "}
             />
-            <Card
+            {/* <Card
                 type={"Diversidad"}
                 image={"Actas"}
                 text={"La secretaría de diversidad busca dar respuesta a las necesidades de los sectores minoritarios, buscando integrar y sumar a todas las voces posibles, ya que es la única manera de crecer en la política y hacer mejores leyes que nos incluyan a todos."}
-            />
+            /> */}
             <Card
                 type={"Mujeres"}
-                image={"Actas"}
+                image={"mujeres"}
                 text={"“Más Mujeres, Mejor Política” espacio destinado a fomentar el crecimiento de las mujeres dentro de la política. "}
             />
 
-            <Card
+            {/* <Card
                 type={"Deporte y Cultura"}
                 image={"Actas"}
                 text={"El Deporte mejora la vida social y cultural porque acerca a personas y comunidades. Los deportes pueden ayudar a superar las diferencias y fomentar el diálogo, y así ayuda a romper los prejuicios, los estereotipos, las diferencias culturales, la ignorancia, la intolerancia y la discriminación. "}
-            />
+            /> */}
 
             <Card
                 type={"Actas y proyectos"}
@@ -48,7 +48,7 @@ export default function Secretarias({ dimension }) {
             />
             <Card
                 type={"Formación Política"}
-                image={"Actas"}
+                image={"formacion"}
                 text={"Es el área encargada de elaborar programas de formación y capacitación que contribuyan al crecimiento académico de los dirigentes y equipos técnicos de JPRO. Promoverá actividades académicas en conjunto con otras instituciones educativas de la ciudad, provincia o nación, públicas o privadas. Encargada de elaborar capacitaciones, disertaciones, talleres sobre distintos temas."}
             />
         </div>
