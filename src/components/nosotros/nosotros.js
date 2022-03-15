@@ -141,7 +141,7 @@ export default function Nosotros({ dimension }) {
             <div className="person-container">
                 <div className="avatar ricky"></div>
                 <div className="name-box">
-                    <h2 style={{ color: "#333" }}>Ricardo Yñiguez</h2>
+                    <h2 style={{ color: "#333" }}>Ricky Yñiguez</h2>
                     <h4 style={{ color: "#333" }}>Consejero Escolar</h4>
                 </div>
                 <div>
