@@ -35,11 +35,11 @@ export default function Secretarias({ dimension }) {
                 text={"“Más Mujeres, Mejor Política” espacio destinado a fomentar el crecimiento de las mujeres dentro de la política. "}
             />
 
-            {/* <Card
+            <Card
                 type={"Deporte y Cultura"}
-                image={"Actas"}
+                image={"cultura"}
                 text={"El Deporte mejora la vida social y cultural porque acerca a personas y comunidades. Los deportes pueden ayudar a superar las diferencias y fomentar el diálogo, y así ayuda a romper los prejuicios, los estereotipos, las diferencias culturales, la ignorancia, la intolerancia y la discriminación. "}
-            /> */}
+            />
 
             <Card
                 type={"Actas y proyectos"}
