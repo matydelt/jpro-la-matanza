@@ -47,7 +47,7 @@ export default function Nosotros({ dimension }) {
                 <div className="avatar mirta"></div>
                 <div className="name-box">
                     <h2 style={{ color: "#333", fontFamily: "gotham Rounded" }}>Mirta Redes</h2>
-                    <h4 style={{ color: "#333", fontFamily: "gotham Rounded" }}>Consejal</h4>
+                    <h4 style={{ color: "#333", fontFamily: "gotham Rounded" }}>Concejal</h4>
                 </div>
                 <div>
                     <div className="redes-box">
@@ -79,7 +79,7 @@ export default function Nosotros({ dimension }) {
                 <div className="avatar greco"></div>
                 <div className="name-box">
                     <h2 style={{ color: "#333" }}>Laura Greco</h2>
-                    <h4 style={{ color: "#333" }}>Consejal</h4>
+                    <h4 style={{ color: "#333" }}>Concejal</h4>
                 </div>
                 <div>
                     <div className="redes-box">
@@ -108,7 +108,7 @@ export default function Nosotros({ dimension }) {
                 <div className="name-box">
 
                     <h2 style={{ color: "#333" }}>Jorge Lampa</h2>
-                    <h4 style={{ color: "#333" }}>Consejal</h4>
+                    <h4 style={{ color: "#333" }}>Concejal</h4>
                 </div>
                 <div>
                     <div className="redes-box">
@@ -141,7 +141,7 @@ export default function Nosotros({ dimension }) {
             <div className="person-container">
                 <div className="avatar ricky"></div>
                 <div className="name-box">
-                    <h2 style={{ color: "#333" }}>Ricky Yñiguez</h2>
+                    <h2 style={{ color: "#333" }}>Ricardo Yñiguez</h2>
                     <h4 style={{ color: "#333" }}>Consejero Escolar</h4>
                 </div>
                 <div>
