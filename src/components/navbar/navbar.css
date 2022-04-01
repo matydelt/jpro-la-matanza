@@ -1,3 +1,11 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.navBox {
+  margin-top: 0;
+}
+
 .submenu {
   margin-top: 10px;
   background-color: white;

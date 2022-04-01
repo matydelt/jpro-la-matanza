@@ -17,20 +17,37 @@
     #ffd205 84%,
     #ffd205 100%
   );
-  width: 100%;
+}
+.card-header {
+  min-width: 15%;
+}
+.card-text {
+  padding: 15px;
 }
 .sumate {
-  margin: 15px;
-  background: linear-gradient(
-    37deg,
-    rgba(15, 100, 170, 1) 0%,
-    rgba(160, 35, 130, 1) 20%,
-    rgba(195, 35, 85, 1) 48%,
-    rgba(230, 35, 40, 1) 75%,
-    rgba(245, 135, 35, 1) 100%
-  );
-  border: #333333 solid 1px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: left;
+  margin: 45px 15px;
+  transition: ease;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border-radius: 30px 5px;
+  box-shadow: 8px 6px 10px 0px rgba(92, 1, 31, 0.48);
+  -webkit-box-shadow: 8px 6px 10px 0px rgba(92, 1, 31, 0.48);
+  -moz-box-shadow: 8px 6px 10px 0px rgba(92, 1, 31, 0.48);
+  background-color: rgb(204, 144, 32);
+}
+@keyframes fadeIn {
+  0% {
+    border:#ffd205 solid 5px;
+  }
+  100% {
+    border: #ece1c8 solid 5px;
+  }
 }
 .button-home {
   text-transform: uppercase;
@@ -51,6 +68,11 @@
   padding-right: 3rem !important;
 }
 .container-redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
   background: linear-gradient(
     to right,
     #a02382 0%,
@@ -64,6 +86,22 @@
   color: white;
   font-family: "Gotham Rounded";
   margin-bottom: 10px;
+  gap: 25px;
+}
+.header-social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.network {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  height: auto;
 }
 .image-box {
   background-image: url("../assets/f7d1f0c4-b7a5-46e7-a261-164969838721.png");
@@ -71,9 +109,6 @@
 .center {
   display: flex;
   justify-content: center;
-}
-.sumate {
-  padding: 10px;
 }
 @font-face {
   font-family: "Gotham Rounded";
